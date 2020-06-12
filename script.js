@@ -24,4 +24,3 @@ appData.moneyPerDay = appData.budjet /30;
 
 
 alert("Ежедневный бюджет: " + appData.moneyPerDay);
-
