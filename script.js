@@ -20,7 +20,7 @@ for (let i = 0; i < 2; i++) {
     }
 }
 
-appData.moneyPerDay = appData.budjet /31;
+appData.moneyPerDay = appData.budjet /34;
 
 
 alert("Ежедневный бюджет: " + appData.moneyPerDay);
