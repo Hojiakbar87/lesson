@@ -1,15 +1,15 @@
-
 let money, time;
 
 function start() {
     money = +prompt("Ваш бюджет на месяц?", "");
     time = prompt("Введите дату в формате YYYY-MM-DD", "");
-    while (true) {
-        if (isNaN(money) || money === "" || money === null) {
+    for (;;) {
+        if (isNaN(money) || money == "" || money == null){
             money = +prompt("Ваш бюджет на месяц?", "");
             continue;
         }
         break;
+
     }
 }
 
@@ -28,7 +28,7 @@ function chooseOptExpenses() {
     for (let i = 0; i < 2; i++) {
         let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
             b = +prompt("Во сколько обойдется?", "");
-        if (typeof (a) === "string" && typeof (b) === "string" && a !== null && b != null && a !== "" && b != null && a.length > 50) {
+        if (typeof (a) == "string" && typeof (b) == "string" && a != null && b != null && a != "" && b != null && a.length > 50) {
             console.log("done");
             appData[a] = b;
         } else {
@@ -50,4 +50,11 @@ if (appData.moneyPerDay < 100) {
     console.log("Средный уровен доставка");
 } else {
     console.log("Призошла ошибка");
+}
+
+function checkSaving() {
+    if (appData.savings == false){
+
+    }
+
 }
